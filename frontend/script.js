@@ -32,8 +32,8 @@ async function loadIssues() {
         issuesDiv.innerHTML += `
             <div class="issue">
                 <b>${issue.category}</b>
-${issue.location ? `<span class="location">📍 ${issue.location}</span>` : ""}
-<br>
+                ${issue.location ? `<span class="location">📍 ${issue.location}</span>` : ""}
+                <br>
                 ${issue.description}<br>
                 <small>Status: ${issue.status}</small>
             </div>
