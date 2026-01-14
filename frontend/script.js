@@ -31,7 +31,9 @@ async function loadIssues() {
     data.forEach(issue => {
         issuesDiv.innerHTML += `
             <div class="issue">
-                <b>${issue.category}</b>${issue.location ? ` (${issue.location})` : ""}<br>
+                <b>${issue.category}</b>
+${issue.location ? `<span class="location">📍 ${issue.location}</span>` : ""}
+<br>
                 ${issue.description}<br>
                 <small>Status: ${issue.status}</small>
             </div>
