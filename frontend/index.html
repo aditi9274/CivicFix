@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CivicFix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🛠 CivicFix</h1>
+    <p>Report and track civic issues easily</p>
+
+    <form id="issueForm">
+        <input type="text" id="category" placeholder="Issue Category (e.g. Pothole)" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <textarea id="description" placeholder="Describe the issue" required></textarea>
+        <button type="submit">Report Issue</button>
+    </form>
+
+    <h2>📋 Reported Issues</h2>
+    <div id="issues"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
